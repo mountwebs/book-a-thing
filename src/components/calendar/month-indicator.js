@@ -1,6 +1,6 @@
 import React from "react";
-import { getMonth } from "../utils/moment-utils";
-import { getMonthSet } from "../utils/date-utils";
+import { getMonth } from "./utils/moment-utils";
+import { getMonthSet } from "./utils/date-utils";
 import { monthsFull } from "./date-constants";
 const MonthIndicator = ({ selectDate, setSelectDate }) => {
   const changeMonth = (e) => {

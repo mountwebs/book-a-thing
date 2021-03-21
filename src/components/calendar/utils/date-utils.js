@@ -5,7 +5,7 @@ const {
   getYear,
   getMonthDayYear,
 } = require("./moment-utils");
-const { totalDatesPerMonthView } = require("../calendar/date-constants");
+const { totalDatesPerMonthView } = require("../date-constants");
 
 const getPrevMonthYear = (month, year) => {
   if (month === 1) {

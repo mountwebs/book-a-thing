@@ -1,0 +1,23 @@
+.bae-calendar-container {
+  box-sizing: border-box;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: 100%;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    padding: 0;
+    margin: 0;
+    line-height: 1;
+    font-family: "Varela Round", sans-serif;
+  }
+
+  @import "./calendar-header.scss";
+  @import "./weekday-indicator.scss";
+  @import "./date-indicator.scss";
+}

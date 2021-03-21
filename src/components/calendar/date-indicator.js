@@ -4,8 +4,8 @@ import {
   getMonthDayYear,
   getMonth,
   getYear,
-} from "../utils/moment-utils";
-import { getDatesInMonthDisplay } from "../utils/date-utils";
+} from "./utils/moment-utils";
+import { getDatesInMonthDisplay } from "./utils/date-utils";
 const DateIndicator = ({ activeDates, selectDate, setSelectDate }) => {
   // EVENT HANDLING CALLBACK
   const changeDate = (e) => {
