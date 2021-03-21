@@ -1,14 +1,20 @@
 import React from "react";
-import moment from "moment";
-
-const calendarHeader = ({ selectDate }) => {
+import {
+  getReadableMonthDate,
+  getReadableWeekday,
+  getYear,
+} from "../utils/moment-utils";
+const CalendarHeader = ({ selectDate }) => {
   return (
-    <div>
-      <h1>{moment(selectDate).format("dddd")}</h1>
-      <h1>{moment(selectDate).format("MMMM Do")}</h1>
-      {moment(selectDate).year()}
+    <div className="bae-calendar-header">
+      <div className="left-container">
+        <h1>{getReadableWeekday(selectDate)}</h1>
+        <h1>{getReadableMonthDate(selectDate)}</h1>
+      </div>
+      <div className="right-container">
+        <h3>{getYear(selectDate)}</h3>
+      </div>
     </div>
   );
 };
-
-export default calendarHeader;
+export default CalendarHeader;
